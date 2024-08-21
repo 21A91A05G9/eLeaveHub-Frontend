@@ -15,7 +15,7 @@ export default function Home() {
     e.preventDefault();
 
     axios
-      .post(`${process.env.NODE_API}/handle_student_login`, formdata)
+      .post(`${process.env.REACT_APP_NODE_API}/handle_student_login`, formdata)
       .then((res) => {
         alert(res.data.msg);
         const id = res.data.id;

@@ -15,7 +15,7 @@ export default function StudentLogin() {
   const handleSTUsubmit = (e) => {
     e.preventDefault();
     axios
-      .post(`${process.env.NODE_API}/auth/student/login`, formdata) 
+      .post(`${process.env.REACT_APP_NODE_API}/auth/student/login`, formdata) 
       .then((res) => {
         if (res.data.msg === "sucessfully login") {
           setStr("Login successfully");

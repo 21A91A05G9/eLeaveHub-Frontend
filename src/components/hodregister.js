@@ -19,7 +19,7 @@ function HODregister() {
   function handleHODreg(e) {
     e.preventDefault();
     axios
-      .post(`${process.env.NODE_API}/auth/hod/register`, hoddata)
+      .post(`${process.env.REACT_APP_NODE_API}/auth/hod/register`, hoddata)
       .then((res) => {
         console.log(res.data.msg)
         if (res.data.msg === "Successfully Registered") nav("/hodlogin");
