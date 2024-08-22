@@ -142,7 +142,7 @@ export default function Sidebar({ id, renderReq, renderDash }) {
                 <>
                   {imageUrl !== "imageurl" ? (
                     <img
-                      src={`http://localhost:5000/${imageUrl}`}
+                      src={`${process.env.REACT_APP_NODE_API}/${imageUrl}`}
                       alt="profile"
                       className="profileicon circular-image"
                     />

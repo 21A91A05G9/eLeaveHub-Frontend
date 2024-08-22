@@ -7,7 +7,7 @@ function Contact() {
       <div className="container">
         <div className="row container">
           <div className="col-md-5 col-sm-1 col-xs-1 col-lg-5  col-offset-md-3"></div>
-          <h1 className="col my-4">Contact Us</h1>
+          <h1 className="col my-5">Contact Us</h1>
         </div>
         <div className="row">
           <div className="col-md-1 col-sm-1 col-xs-1 col-offset-md-1"></div>
